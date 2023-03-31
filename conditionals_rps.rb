@@ -6,4 +6,19 @@
 # Based on what the player chose, prints "You won!" or "You lost!" or "You tied!"
 # If you need a refresher on the rules of Rock, Paper, Scissors: https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors
 
-p "Please choose rock, paper, or scissors:"
+puts "Please choose rock, paper, or scissors:"
+player_input = gets.chomp
+
+if player_input == "rock"
+  puts "You played rock!"
+  puts "The computer played scissors!"
+  puts "You won!"
+elsif player_input == "paper"
+  puts "You played paper!"
+  puts "The computer played scissors!"
+  puts "You lost!"
+else
+  puts "You played scissors!"
+  puts "The computer played scissors!"
+  puts "You tied!" 
+end
